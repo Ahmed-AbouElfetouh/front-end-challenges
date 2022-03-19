@@ -1,0 +1,299 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+a {
+    text-decoration: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start Common Style */
+.commen-head {
+    margin-bottom: 30px;
+}
+.commen-head h3 {
+    position: relative;
+    letter-spacing: 2px;
+}
+.commen-head h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 40px;
+    height: 2px;
+    background-color: #ED6F53;
+}
+/* End Common Style */
+
+/* Start */
+.pre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.pre i {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.page .one {
+    width: 1200px;
+    height: 420px;
+    background: url(../images/cover.jpg) no-repeat;
+    grid-column: 1 / 2;
+    margin-bottom: 20px;
+}
+.page .one h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.page .two {
+    grid-column: 2 / 5;
+}
+.page .two,
+.page .five {
+    border: 2px solid #E5E5E5;
+    padding: 20px;
+}
+.page .two .content div:not(:first-of-type){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.page .two .content .start {
+    display: flex;
+    justify-content: space-between;
+}
+.page .two .content .list {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.page .two .content .list ul li:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+.page .three {
+    background-color: #F2F2F2;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    grid-column: 1 / 3;
+    margin-bottom: 20px;
+}
+.page .three .first,
+.page .three .second form{
+    display: flex;
+    align-items: center;
+}
+.page .three .first span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+.page .three .first span:first-of-type {
+    background-color: #C2C2C2;
+}
+.page .three .first span:last-of-type {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #000000;
+}
+.page .three .second form div:first-of-type {
+    margin-right: 30px;
+}
+.page .three .second form div label {
+    margin-right: 10px;
+}
+.page .three .second form div select {
+    border: none;
+    
+}
+.page .three .second form div:first-of-type select {
+    padding: 5px 10px 5px 0
+}
+.page .three .second form div:last-of-type select {
+    padding: 5px 30px 5px 0
+}
+.page .four {
+    display: flex;
+    align-items: center;
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+.page .four .image {
+    margin-right: 20px;
+    position: relative;
+}
+.page .four .image::after {
+    content: "-12%";
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #E52E06;
+    font-weight: bold;
+    padding: 5px;
+}
+.page .four .info .stars {
+    margin-bottom: 10px;
+    color: #F3CD1E;
+}
+.page .four .info .text span:first-of-type {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #89888A;
+    font-size: 12px;
+    font-weight: bold;
+}
+.page .four .info .text span:nth-of-type(2) {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #89888A;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.page .four .info .text span:last-of-type {
+    color: #E52E06;
+    font-size: 16px;
+    font-weight: bold;
+}
+.page .four .info .text ul {
+    margin-top: 10px;
+    padding: 5px 10px;
+    display: flex;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+}
+.page .four .info .text ul li {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #A8AAA8;
+    font-weight: bold;
+    position: relative;
+}
+.page .four .info .text ul li:not(:last-of-type) {
+    margin-right: 20px;
+    padding-right: 20px;
+}
+.page .four .info .text ul li:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 1px;
+    height: calc(100% + 10px);
+    background-color: #ccc;
+}
+.page .five {
+    grid-column: 2 / 5;
+}
+.page .five .colors {
+    padding-left: 20px;
+}
+.page .five .colors div:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.page .five .colors div p {
+    position: relative;
+}
+.page .five .colors div p::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 4px
+}
+.page .five .colors div:first-of-type p::before {
+    background-color: gray;
+}
+.page .five .colors div:nth-of-type(2) p::before {
+    background-color: #fff;
+}
+.page .five .colors div:nth-of-type(3) p::before {
+    background-color: #000;
+}
+.page .five .colors div:nth-of-type(4) p::before {
+    background-color: chocolate;
+}
+.page .five .colors div:nth-of-type(5) p::before {
+    background-color: orangered;
+}
+/* End */

@@ -1,0 +1,25 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Start */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #787878;
+  box-shadow: 101px -100px #7cbb00, -101px -100px #f65314, 101px 102px #ffbb00,
+    -101px 102px #00a1f1;
+}
+/* End */

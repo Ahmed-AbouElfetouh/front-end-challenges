@@ -1,0 +1,131 @@
+:root {
+    --mainColor: #323234;
+    --secondColor: #FEA604;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/* Start */
+.drow {
+    width: 1000px;
+    height: 1000px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.drow .one,
+.drow .two,
+.drow .three,
+.drow .four,
+.drow .five,
+.drow .sex {
+    background-color: var(--mainColor);
+}
+.drow .one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 8
+}
+.drow .two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    position: relative
+}
+.drow .two::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondColor);
+    animation: move-1 11s linear
+}
+@keyframes move-1 {
+    0%, 100% {
+        top: 20px;
+        right: 20px;
+    }
+    10%, 80% {
+        top: 20px;
+        right: 280px;
+    }
+    20%, 40% {
+        top: 315px;
+        right: 280px;
+    }
+    30% {
+        top: 280;
+        right: 20px;
+    }
+    50%, 70% {
+        top: 600px;
+        right: 280px;
+    }
+    60% {
+        top: 600px;
+        right: 20px;
+    }
+}
+.drow .three {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5
+}
+.drow .four {
+    grid-column: 2 / 4;
+    grid-row: 7 / 8
+}
+.drow .five {
+    grid-column: 6 / 7;
+    grid-row: 1 / 8
+}
+.drow .sex {
+    grid-column: 7 / 9;
+    grid-row: 7 / 8;
+    position: relative
+}
+.drow .sex::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondColor);
+    opacity: 0;
+    animation: move-2 4s linear 11s;
+}
+@keyframes move-2 {
+    0% {
+        opacity: 1;
+        right: 20px;
+        top: 20px;
+        
+    }
+    20% {
+        right: 280px;
+        top: 20px;
+    }
+    40% {
+        right: 280px;
+        top: -550px;
+    }
+    100% {
+        right: 280px;
+        top: -550px;
+        opacity: 0
+    }
+}
+/* End */

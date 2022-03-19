@@ -1,0 +1,172 @@
+:root {
+    --mainColor: #959595;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0E0E0E;
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+footer {
+    margin-top: 130px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #333333;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+footer h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+footer p {
+    color: #959595;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer .contact .numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+footer .contact .numbers h4 {
+    color: var(--mainColor);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+footer .contact .numbers span {
+    color: #fff;
+    font-weight: bold;
+}
+footer .info ul li,
+footer .account ul li{
+    margin-bottom: 15px;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+footer .news form {
+    margin-bottom: 20px;
+}
+footer .news form input[type="email"] {
+    padding: 10px;    
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #4C4C4C;
+    color: #fff;
+    font-weight: bold;
+}
+footer .news form input[type="email"]::placeholder {
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.5;
+}
+footer .news form input[type="submit"] {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #E52727;
+    color: #fff;
+    font-weight: bold;
+}
+footer .news ul {
+    display: flex;
+}
+footer .news ul li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #000;
+}
+footer .news ul li:first-of-type {
+    background-color: #3C5A99;
+}
+footer .news ul li:nth-of-type(2) {
+    background-color: #00A2E8;
+}
+footer .news ul li:nth-of-type(3) {
+    background-color: #E52E2E;
+}
+footer .news ul li:nth-of-type(4) {
+    background-color: #815DC7;
+}
+footer .news ul li:nth-of-type(5) {
+    background-color: #FFC338;
+}
+.pics {
+    background-color: #2B2B2B;
+}
+.pics .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pics p {
+    color: var(--mainColor);
+}
+.pics p span {
+    color: #fff;
+    font-weight: bold;
+}
+.pics .images {
+    display: flex;
+}
+.pics .images .image {
+    margin-right: 15px;
+}
+/* End */

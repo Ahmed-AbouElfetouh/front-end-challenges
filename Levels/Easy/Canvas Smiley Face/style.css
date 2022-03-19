@@ -1,0 +1,22 @@
+:root {
+    --mainColor: #03A9F4;
+    --backgroundColor: #F6F6F6;
+    --praColor: #333;
+    --paddingTop: 50px;
+    --paddingBotttom: 50px
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

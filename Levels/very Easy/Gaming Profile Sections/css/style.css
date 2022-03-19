@@ -1,0 +1,226 @@
+:root {
+    --mainColor: #009688;
+    --secondColor: #E91E63;
+    --mainBackground: #607D8B;
+    --yesColor: #0F8000;
+    --noColor: #FF2939;
+    --mainPadding: 30px;
+    --mainMargin: 30px
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5
+}
+/* Start Global Style */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start My Framework */
+hr {
+    border: 1px solid #eee;
+}
+.main-header {
+    width: fit-content;
+    color: #fff;
+    background-color: var(--mainBackground);
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+/* End My Framework */
+
+/* Start Portfolio Section */
+.portfolio .container {
+    display: flex;
+    background-color: #fff;
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    margin-top: var(--mainMargin);
+    margin-bottom: var(--mainMargin)
+}
+.portfolio .left {
+    margin-right: 5%;
+    width: 25%;
+    text-align: center;
+    position: relative
+}
+.portfolio .left::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -28px;
+    width: 1px;
+    height: 128%;
+    background-color: #f5f5f5
+}
+.portfolio .left .image {
+    width: 128px;
+    margin: auto;
+}
+.portfolio .left .image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #F5F5F5
+}
+.portfolio .left .prog {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.portfolio .left .prog span {
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: var(--mainColor);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+.portfolio .left p {
+    font-size: 14px
+}
+.portfolio .left p span {
+    color: var(--mainColor);
+    font-weight: bold
+}
+.portfolio .right {
+    position: relative;
+    width: 85%;
+}
+.portfolio .right p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.portfolio .right span {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -20px
+}
+/* End Portfolio Section */
+
+/* Start Points Section */
+.points .container{
+    background-color: #fff;
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    margin-top: var(--mainMargin);
+    margin-bottom: var(--mainMargin)
+}
+.points p {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.points p span {
+    font-weight: bold
+}
+.points p .green {
+    color: var(--mainColor)
+}
+.points p .red {
+    color: var(--secondColor)
+}
+/* End Points Section */
+
+/* Start Trophies Section */
+.trophies .container{
+    background-color: #fff;
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    margin-top: var(--mainMargin);
+    margin-bottom: var(--mainMargin)
+}
+.trophies .images {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px 15px;
+}
+.trophies .images .img img {
+    width: 100%;
+}
+/* End Trophies Section */
+
+/* Start News Section */
+.news .container{
+    background-color: #fff;
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    margin-top: var(--mainMargin);
+    margin-bottom: var(--mainMargin)
+}
+.news p span {
+    font-weight: bolder
+}
+.news p .from {
+    color: var(--secondColor)
+}
+.news p .to {
+    color: #2BA1F5
+}
+/* End News Section */
+
+/* Start Powers Section */
+.powers .container{
+    background-color: #fff;
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    margin-top: var(--mainMargin);
+    margin-bottom: var(--mainMargin)
+}
+.powers .content div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+.powers .content div span {
+    font-weight: bold
+}
+.powers .content div .yes {
+    color: var(--yesColor)
+}
+.powers .content div .no {
+    color: var(--noColor)
+}
+/* End Powers Section */

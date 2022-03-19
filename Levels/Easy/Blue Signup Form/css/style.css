@@ -1,0 +1,114 @@
+:root {
+    --mainColor: #2196F3;
+    --secondColor: #999999;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor);
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+/* End Global Style */
+
+/* Start */
+.parent {
+    width: 350px;
+    height: 580px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+}
+.parent .content {
+    padding: 30px;
+}
+.parent .head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.parent form div {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E7E7E7;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.parent form i {
+    color: var(--secondColor);
+    margin-right: 10px;
+}
+.parent form input {
+    width: 100%;
+    border: none;
+}
+.parent form input:focus {
+    outline: none;
+}
+.parent form input[type="submit"] {
+    padding: 10px;
+    background-color: var(--mainColor);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.parent .account {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px dotted var(--secondColor);
+}
+.parent .account span {
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.parent .list {
+    text-align: center;
+}
+.parent .list h3 {
+    color: #666;
+    font-weight: bold;
+}
+.parent .list ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.parent .list ul li {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+}
+.parent .list ul li:first-of-type {
+    background-color: #3B5998;
+}
+.parent .list ul li:nth-of-type(2) {
+    background-color: #2196F3;
+}
+.parent .list ul li:last-of-type {
+    background-color: #DB4437;
+}
+/* End */

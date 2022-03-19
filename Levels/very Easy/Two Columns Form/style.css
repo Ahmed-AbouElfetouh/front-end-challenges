@@ -1,0 +1,97 @@
+:root {
+    --backgroundColor: #F6F6F6
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--backgroundColor);
+}
+
+/* Start Global Style */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* My Form */
+.myForm {
+    margin-top: 100px
+}
+.myForm .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.myForm label {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px
+}
+.myForm input:not(input[type="submit"]),
+.myForm textarea {
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid #ADADAD;
+    outline: none;
+    margin-bottom: 15px
+}
+.myForm input {
+    height: 50px;
+    padding-left: 15px
+}
+.myForm textarea {
+    height: 160px;
+    padding: 15px;
+}
+::placeholder {
+    color: #ADADAD;
+    font-weight: bold
+}
+.myForm input[type="submit"] {
+    width: 219%;
+    margin-left: -119%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #009688;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer
+}
+/* My Form */

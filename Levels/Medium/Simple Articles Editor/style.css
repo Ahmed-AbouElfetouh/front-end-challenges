@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 800px;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #EAEAEA;
+}
+.container .controls form{
+  display: flex;
+  margin-bottom: 10px;
+}
+.container .controls form > div:not(.fonts, .min-max) {
+  background-color: #fff;
+  margin-right: 15px;
+  padding: 10px;
+  
+}
+.container .controls form > div select {
+  border: unset;
+  outline: unset;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  font-size: 16px;
+}
+.container .controls form > div span {
+  user-select: none;
+  cursor: pointer;
+}
+.container .controls form > div .bold {
+  font-weight: bold;
+}
+.container .controls form > div .bold,
+.container .controls form > div .change-colors {
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+.container .controls form > div .bold:hover,
+.container .controls form > div .change-colors:hover {
+  color: #03A9F4;
+}
+.min-max {
+  display: flex;
+  align-items: center;
+}
+.min-max span {
+  background-color: #fff;
+  padding: 10px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.min-max span:first-of-type {
+  margin-left: 0;
+}
+.min-max p {
+  background-color: #fff;
+  padding: 10px;
+  user-select: none
+}
+.min-max .increase.disabled,
+.min-max .decrease.disabled{
+  cursor: no-drop;
+  opacity: 0.5;
+}
+.container .content {
+  padding: 10px;
+  background-color: #fff;
+}
+.container .content.special-style {
+  background-color: #000;
+  color: #fff;
+}
+.container .content.font-weight {
+  font-weight: bold;
+}

@@ -1,0 +1,150 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F6F6F6
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+.parent .intro {
+    width: fit-content;
+    color: #fff;
+    background-color: #2196F3;
+    padding: 10px 40px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative
+}
+.parent .intro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 27px;
+    border-style: solid;
+    border-color: transparent #F6F6F6 transparent transparent
+}
+.parent .container {
+    display: flex;
+}
+.parent .list {
+    flex: 1;
+    margin-left: 5%;
+    margin-bottom: 2%
+}
+.parent .list .info {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px
+}
+.parent .list .info.basic {
+    background-color: #F44336
+}
+.parent .list .info.pro {
+    background-color: #2196F3
+}
+.parent .list ul {
+    background-color: #fff
+}
+.parent .list ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    position: relative
+}
+.parent .list ul li:not(:last-child) {
+    border-bottom: 1px solid #eee
+}
+.parent  .list ul li .wrong::before,
+.parent .list ul li .right::before,
+.parent .list ul li .question::after {
+    position: absolute;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px
+}
+.parent .list ul li .wrong::before {
+    content: "x";
+    left: 10px;
+    background-color: #E91E63;
+    font-size: 14px;
+    font-weight: bold;
+}
+.parent .list ul li .right::before {
+    content: "";
+    left: 10px;
+    background-color: #009688
+}
+.parent .list ul li .right::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 16px;
+    width: 3px;
+    height: 10px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(40deg);
+}
+.parent .list ul li .question::after {
+    content: "?";
+    right: 50px;
+    background-color: #7E7E7E
+}
+/* End */

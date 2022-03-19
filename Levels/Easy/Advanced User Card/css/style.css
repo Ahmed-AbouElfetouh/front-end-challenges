@@ -1,0 +1,212 @@
+:root {
+    --mainColor: #2ECA7F;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    background-color: #F8F9FA;
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+.style {
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+}
+nav {
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+nav .left {
+    display: flex;
+    align-items: center;
+}
+nav .left .image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+nav .left .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+nav .left .info {
+    color: #fff;
+    font-weight: bold;
+}
+nav .left .info h2 {
+    margin-bottom: 5px;
+}
+nav .right {
+    margin-right: 50px;
+}
+nav .right p {
+    color: #fff;
+    font-weight: bold;
+}
+nav .right ul {
+    display: flex;
+    margin-top: 10px;
+}
+nav .right ul li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #fff;
+    color: var(--mainColor);
+}
+.page {
+    padding: 50px 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    background-color: #fff;
+}
+.page .list {
+    grid-column: 1 / 2;
+}
+.page .list ul li {
+    margin-left: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.page .list ul li.active {
+    color: var(--mainColor);
+    position: relative;
+}
+.page .list ul li.active::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: var(--mainColor);
+}
+.page .list ul li i {
+    margin-right: 15px;
+}
+.page .image {
+    grid-column: 2 / 3;
+    width: 650px;
+}
+.page .image img {
+    width: 100%;
+}
+.page .details {
+    grid-column: 3 / 6;
+}
+.page .details h3 {
+    position: relative;
+}
+.page .details h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 40px;
+    height: 8px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+}
+.page .details h3::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--mainColor);
+}
+.page .details > p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.page .details ul li {
+    display: flex;
+    margin-bottom: 10px;
+}
+.page .details ul li p {
+    margin-right: 15px;
+    font-weight: bold;
+}
+.page .details button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: var(--mainColor);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.page .details button span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--mainColor);
+}
+/* End */

@@ -1,0 +1,139 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif
+}
+/* Start Global Style */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+.page {
+    margin-top: 20px;
+}
+.page .container {
+    display: flex;
+    align-items: center;
+}
+.page .image {
+    margin-right: 100px;
+    border: 15px solid #F88992;
+}
+.page .image img {
+    width: 400px;
+    height: 300px;
+    padding: 30px 40px 30px 0;
+    margin-left: -60px;
+}
+.page .content {
+    flex: 1;
+}
+.page .content h1 {
+    margin: 0;
+}
+.page .content span {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+    color: #F33849;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+.page .content span::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: #F33849;
+}
+.page .content span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 1px solid #F33849;
+}
+.page .content p {
+    color: #333;
+    line-height: 1.6;
+}
+.page .content .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.page .content .boxes .box {
+    width: calc(90% / 3);
+    border: 1px solid #E5E5E5;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+    counter-increment: numbers;
+    position: relative;
+}
+.page .content .boxes .box::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #F33849 #F33849 transparent transparent;
+}
+.page .content .boxes .box::before {
+    content: "0"counter(numbers);
+    position: absolute;
+    z-index: -1;
+    left: 130px;
+    top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #E5E5E5;
+}
+.page .content .boxes .box p {
+    font-weight: bold;
+}
+/* End */

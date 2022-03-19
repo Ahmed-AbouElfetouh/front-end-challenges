@@ -1,0 +1,132 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #DFEBF3;    
+    
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+/* End Global Style */
+
+/* Start */
+.parent {
+    margin: 200px;
+}
+.parent .lists {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.parent .lists .list {
+    width: calc(100% / 3);
+    background-color: #fff;
+    margin-right: 2%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+}
+.parent .lists .list:first-of-type {
+    margin-bottom: 80px;
+}
+.parent .lists .list:nth-of-type(2) {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.parent .lists .list:last-of-type {
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.parent .lists .list .head span {
+    font-size: 50px;
+    position: relative;
+}
+.parent .lists .list .head span::before {
+    content: "$";
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    font-size: 30px;
+}
+.parent .lists .list .head h2 {
+    padding: 5px 0 5px 30px;
+    position: relative;
+    left: -10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: left;
+}
+.parent .lists .list .head h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border-width: 5px;
+    border-style: solid;
+}
+.parent .lists .list:first-of-type .head h2 {
+    background-color: #13C8A6;
+    width: calc(100% - 240px);
+}
+.parent .lists .list:first-of-type .head h2::before {
+    border-color: transparent #0A7369 #0A7369 transparent
+}
+.parent .lists .list:nth-of-type(2) .head h2 {
+    background-color: #EFCB53;
+    width: calc(100% - 200px);
+    
+}
+.parent .lists .list:nth-of-type(2) .head h2::before {
+    border-color: transparent #C4A029 #C4A029 transparent
+}
+.parent .lists .list:last-of-type .head h2 {
+    background-color: #555FAE;
+    width: calc(100% - 200px);
+}
+.parent .lists .list:last-of-type .head h2::before {
+    border-color: transparent #3F4CA2 #3F4CA2 transparent
+}
+.parent .lists .list ul li {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.parent .lists .list button {
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.parent .lists .list button:focus {
+    outline: none;
+}
+.parent .lists .list:first-of-type button {
+    background-color: #13C8A6;
+}
+.parent .lists .list:nth-of-type(2) button {
+    background-color: #EFCB53;
+}
+.parent .lists .list:last-of-type button {
+    background-color: #555FAE;
+}
+/* End */

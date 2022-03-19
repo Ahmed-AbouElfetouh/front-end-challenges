@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Simple Articles Editor</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Roboto&family=Roboto+Mono&display=swap">
+
+  <script src="app.js" defer></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="controls">
+      <form action="">
+        <div class="fonts">
+          <select name="" id="family">
+            <option value="">Choose Fonts --</option>
+            <option value="Roboto Mono">Roboto Mono</option>
+            <option value="Cairo">Cairo</option>
+            <option value="Roboto">Roboto</option>
+          </select>
+        </div>
+        <div>
+          <span class="bold" id="bold">B</span>
+        </div>
+        <div class="min-max">
+          <span id="decrease" class="decrease">-</span>
+          <p id="value">16</p>
+          <span id="increase" class="increase">+</span>
+        </div>
+        <div>
+          <span class="change-colors" id="change-colors">Invert Colors</span>
+        </div>
+      </form>
+    </div>
+
+    <div class="content" id="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dignissimos quo saepe, incidunt laborum
+        quidem consequatur voluptatum eveniet voluptates ratione numquam aliquam voluptatibus exercitationem qui. Fugit
+        vitae modi molestiae.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEEFF1;
+    padding: 20px;
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+.page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+.page .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.page .fa-ellipsis-h {
+    color: #E4E4E4;
+}
+.page .search-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.page .search-list input[type="search"] {
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #F0F1F3;
+}
+::placeholder {
+    color: #99999A;
+    font-weight: bold;
+    font-style: italic;
+}
+.page .search-list input:first-of-type {
+    width: 300px;
+}
+.page .search-list input:nth-of-type(2) {
+    width: 450px;
+}
+.page .search-list input:nth-of-type(3) {
+    width: 450px;
+}
+.page .search-list input[type="submit"] {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: linear-gradient(to right, #55309F 60% , #7623A0);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.page .items > div {
+    height: fit-content;
+    padding-bottom: 10px;
+    /* padding-top: 10px */
+}
+.page .items > div form{
+    height: fit-content;
+}
+.page .items > div:first-of-type {
+    border-bottom: 2px solid #DFDFDF;
+}
+.page .items > div:not(:first-of-type) {
+    border-bottom: 1px solid #DFDFDF;
+}
+.page .items > div:last-of-type {
+    border-bottom: none 
+}
+.page .items div form input[type="checkbox"]{
+    appearance: none;
+}
+.page .items div form label{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin-left: 40px;
+    position: relative;
+}
+.page .items > div form label::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.page .items > div form input[type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    background-color: #5B2D9F;
+    border: none;
+    box-shadow: 0 0 24px rgba(91, 45, 159, 0.8);
+}
+.page .items > div form input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+.page .items div form label .test {
+    display: flex;
+    align-items: center;
+}
+.page .items div form label .title {
+    grid-column: 1 / 2;
+    
+}
+.page .items div form label .image {
+    grid-column: 2 / 3;
+    width: 80px;
+    
+}
+.page .items div form label .image img {
+    width: 100%;
+    align-self: center;
+}
+.page .items div form label .menu {
+    grid-column: 3 / 4;
+    
+}
+.page .items div form label .name {
+    grid-column: 4 / 5;
+    
+}
+.page .items div form label .quant {
+    grid-column: 5 / 6;
+}
+.page .items div form label .quant span {
+    
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+}
+.page .items div form label .amount {
+    grid-column: 6 / 7;
+    
+}
+.page .items div form label .order {
+    grid-column: 7 / 8;
+    
+}
+.page .items div form label .order button {
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #ffff;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+}
+.page .items div form label .order button.conf {
+    background-color: #2CE5C0;
+}
+.page .items div form label .order button.pend {
+    background-color: #FFB74D;
+}
+.page .items div form label .phone {
+    grid-column: 8 / 10;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.page .footer {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.page .footer p {
+    color: #8E8E8E;
+    font-weight: bold;
+}
+.page .footer .list {
+    display: flex;
+    align-items: center;
+}
+.page .footer .list ul {
+    display: flex;
+}
+.page .footer .list ul li{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #f6f6f6;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #A4A4A4;
+}
+.page .footer .list ul li.active{
+    background-color: #4B349E;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.page .footer .list span {
+    color: #B6B6B6;
+    font-weight: bold;
+}
+.page .footer .list span:first-of-type {
+    margin-right: 20px;
+}
+.page .footer .list span:last-of-type {
+    margin-left: 15px;
+}
+
+/* End */

@@ -1,0 +1,79 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+:root {
+    --mainColor: #03A9F4;
+    --secondColor: #E91E63;
+    --thirdColor: #009688;
+    --fourColor: #673AB7;
+    --fiveColor: #FF9800;
+    --sixColor: #8BC34A;
+    --sevenColor: #795548;
+    --eightColor: #323234;
+    --nighnColor: #FEA604;
+}
+div {
+    width: 800px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 123px 0 0 0 var(--secondColor) inset;
+    border: 2px solid var(--secondColor);
+    position: relative;
+    overflow: hidden;
+}
+div::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--nighnColor);
+}
+div::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -80px;
+    width: 250px;
+    height: 250px;
+    background-color: var(--secondColor);
+    transform: rotate(45deg);
+}
+div p {
+    position: relative;
+    font-weight: bold;
+}
+div p::before {
+    content: "Osama Elzero";
+    position: absolute;
+    top: -10px;
+    left: -125px;
+    color: #fff;
+    background-color: var(--secondColor);
+    padding: 10px;
+}
+div p::after {
+    content: "";
+    position: absolute;
+    left: -454px;
+    top: -112px;
+    border-width: 123px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}

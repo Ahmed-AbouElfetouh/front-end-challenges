@@ -1,0 +1,227 @@
+:root {
+    --mainColor: #ED4C21;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+a {
+    text-decoration: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+.page {
+    padding: 20px
+}
+.page .head {
+    height: 400px;
+    background: url(../images/header.jpg)center center no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+/* Start Boxes */
+.page .details {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.page .details .box-1 {
+    background-color: #122333;
+    color: #fff;
+    grid-column: 1 / 2;
+    position: absolute;
+    top: -250px;
+    left: 50px;
+    padding: 20px;
+    border-radius: 6px;
+}
+.page .details .box-1 h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.page .details .box-1 h1::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 15%;
+    height: 3px;
+    background-color: var(--mainColor);
+}
+.page .details ul li {
+    margin-bottom: 20px;
+}
+.page .details .box-1 ul li i {
+    color: var(--mainColor);
+    margin-right: 10px;
+}
+.page .details .box-1 button,
+.footer .content .text button {
+    padding: 10px 15px;
+    background-color: var(--mainColor);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.page .details .box-2 {
+    height: fit-content;
+    border: 2px solid var(--mainColor);
+    grid-column: 3 / 4;
+    padding: 20px;
+    margin-top: 10px;
+}
+.page .details .box-2 p {
+    line-height: 1.6;
+}
+/* End Boxes */
+
+/* Start Information */
+.info {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.info .box {
+    background-color: #F2F8FA;
+    padding: 20px;
+    width: calc(100% / 3 - 12%)
+}
+.info .box span {
+    color: var(--mainColor);
+    font-weight: bold;
+    font-size: 20px;
+}
+.info .box h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.info .box p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+.info a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--mainColor);
+    font-size: 20px;
+}
+/* End Information */
+
+/* Start Footer  */
+.footer {
+    height: 420px;
+    padding: 35px;
+    position: relative;
+    background: url(../images/footer.jpg)center center no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+.footer::after,
+.footer .content .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.footer .content .text {
+    width: calc(100% / 2 - 5%);
+}
+.footer .content .text h3 {
+    font-size: 25px;
+    position: relative;
+}
+.footer .content .text h3::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 10%;
+    height: 3px;
+    background-color: var(--mainColor);
+}
+.footer .content .text p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.footer .content .image {
+    height: 350px;
+    position: relative;
+    font-size: 0;
+    width: calc(100% / 2 - 5%);
+}
+.footer .content .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+/* End Footer  */
+
+/* End */

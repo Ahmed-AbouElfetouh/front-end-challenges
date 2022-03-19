@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+}
+div {
+  width: 600px;
+  height: 100px;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+}
+div::after {
+  content: '';
+  position: absolute;
+  top: -550px;
+  left: -300px;
+  width: 1200px;
+  height: 1200px;
+  background-image: conic-gradient(
+    #4285f4 0% 12.5%,
+    #fbbc05 12.5% 25%,
+    #34a853 25% 37.5%,
+    #ea4335 37.5% 50%,
+    #4285f4 50% 62.5%,
+    #fbbc05 62.5% 75%,
+    #34a853 75% 87.5%,
+    #ea4335 87.5% 100%
+  );
+  animation: spin 2s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+div::before {
+  content: 'Ahmed Mohammed - Google Animation';
+  position: absolute;
+  z-index: 1;
+  width: 590px;
+  height: 90px;
+  left: 5px;
+  top: 5px;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}

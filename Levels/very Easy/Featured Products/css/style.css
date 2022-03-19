@@ -1,0 +1,141 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+/* Start Global Style */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+.products .head {
+    width: fit-content;
+    background-color: #336C7C;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 30px
+}
+.products .container {
+    display: flex;
+    justify-content: space-between
+}
+.products .card:not(:last-of-type) {
+    margin-right: 2%;
+}
+.products  .card {
+    border: 5px solid #DDDDDD;
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative
+}
+.products .card:nth-of-type(2)::before {
+    content: "Sale!";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #F94B02;
+    color: #fff;
+    font-size: 14px;
+}
+.products .card .image {
+    margin-bottom: 20px
+}
+.products .card .image img {
+    width: 100%;
+    padding: 2px
+}
+.products .card h3 {
+    color: #333;
+    font-weight: normal
+}
+.products .card:not(:nth-of-type(2)) span {
+    display: block;
+    color: #346F7F;
+    font-weight: bold;
+    margin-top: 30px
+}
+.products .card:not(:nth-of-type(2)) span::after,
+.products .card:not(:nth-of-type(2)) span::before,
+.products .card:nth-of-type(2) span:nth-of-type(2)::after,
+.products .card:nth-of-type(2) span:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 86%;
+    width: 50px;
+    height: 3px;
+    background-color: #ddd
+}
+.products .card:not(:nth-of-type(2)) span::after {
+    right: 20%;
+}
+.products .card:not(:nth-of-type(2)) span::before {
+    left: 20%;
+}
+.products .card:nth-of-type(2) span {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-weight: bold
+}
+.products .card:nth-of-type(2) span:first-of-type {
+    color: #ddd;
+    text-decoration: line-through
+}
+.products .card:nth-of-type(2) span:nth-of-type(2) {
+    color: #F94B02
+}
+.products .card:nth-of-type(2) span:nth-of-type(2)::after {
+    right: 12%
+}
+.products .card:nth-of-type(2) span:nth-of-type(2)::before {
+    left: 10%
+}
+/* End */
+
+/* #346F7F */

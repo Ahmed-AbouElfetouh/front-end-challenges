@@ -1,0 +1,242 @@
+:root {
+    --mainColor: #03A9F4;
+    --backgroundColor: #F6F6F6;
+    --praColor: #333;
+    --paddingTop: 50px;
+    --paddingBotttom: 50px
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+a {
+    text-decoration: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start Header Section */
+header {
+    padding: 10px;
+    background-color: #fff
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+header .logo {
+    width: 15%
+}
+header .links ul{
+    display: flex
+}
+header .links ul li{
+    padding-left: 20px
+}
+header .links ul li a{
+    color: #000
+}
+/* End Header Section */
+
+/* Start Content Services */
+.content {
+    background-color: var(--backgroundColor);
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBotttom);
+    text-align: center
+}
+.content h2 {
+    margin-bottom: 20px
+}
+.content h2 span {
+    color: var(--mainColor)
+}
+.content p {
+    line-height: 1.6;
+    color: var(--praColor)
+}
+/* End Content Services */
+
+/* Start Section Services */
+.services {
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBotttom);
+    text-align: center
+}
+.services .container {
+    display: flex;
+    justify-content: space-between
+}
+.services .details .image {
+    width: 30%;
+    margin: auto
+}
+.services .details .image img {
+    width: 100%
+}
+.services .details h3 {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+.services .details p {
+    line-height: 1.6;
+    color: var(--praColor)
+}
+/* Start Section Services */
+
+/* Start About Section */
+.about {
+    background-color: var(--backgroundColor);
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBotttom)
+}
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.about .image {
+    flex: 1;
+}
+.about .image img {
+    width: 80%
+}
+.about .text {
+    flex: 1;
+}
+.about .text h2 {
+    margin-bottom: 20px
+}
+.about .text p {
+    line-height: 1.6;
+    color: var(--praColor)
+}
+/* End About Section */
+
+/* Start Stats Section */
+.stats {
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBotttom)
+}
+.stats .container {
+    display: flex;
+    justify-content: space-between
+}
+.stats .red {
+    background-color: #B33939
+}
+.stats .blue {
+    background-color: #227093
+}
+.stats .green {
+    background-color: #218C74
+}
+.stats .numbers {
+    text-align: center;
+    padding: 30px;
+    width: 30%;
+    color: #fff;
+}
+.stats .numbers span {
+    font-size: 50px;
+    font-weight: bold;
+}
+/* End Stats Section */
+
+/* Start Skills Section */
+.skills {
+    background-color: var(--backgroundColor);
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBotttom)
+}
+.skills .head {
+    text-align: center;
+    margin-bottom: 50px
+}
+.skills .prog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px
+}
+.skills .bar {
+    background-color: #fff;
+    height: 40px;
+    flex: 1;
+    margin-left: 15px
+}
+.skills .bar span {
+    background-color: var(--mainColor);
+    display: block;
+    height: 100%;
+    position: relative
+}
+.skills .bar span::after {
+    content: attr(data-prog);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    font-weight: bold
+}
+/* End Skills Section */
+
+/* Start Footer Section */
+footer {
+    padding-top: calc(var(--paddingTop) - 30px);
+    padding-bottom: calc(var(--paddingBotttom) - 30px);
+    background-color: var(--praColor);
+    color: #fff
+}
+footer .container {
+    display: flex;
+    justify-content: space-between
+}
+footer p span {
+    color: var(--mainColor)
+}
+/* End Footer Section */

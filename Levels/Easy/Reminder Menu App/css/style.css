@@ -1,0 +1,172 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F2EFF6;
+    padding: 30px;
+}
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+.container {
+    width: 740px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+/* End Global Style */
+
+/* Start */
+.page .container{
+    position: relative;
+}
+.edit {
+    position: absolute;
+    right: 15px;
+    color: #1272F2;
+}
+.page form {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.page form input {
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #E3E2E8;
+    padding: 30px 15px 20px 40px;
+    width: 100%;
+    border-radius: 15px;
+}
+::placeholder {
+    color: #828187;
+    font-size: 25px;
+}
+.page form i {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    color: #828187;
+    font-size: 25px;
+}
+.page .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.page .info > div {
+    padding: 30px 15px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.page .info > div .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page .info > div .top span:first-of-type {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.page .info > div .top span:first-of-type i {
+    padding-top: 13px;
+}
+.page .info > div:first-of-type .top span:first-of-type {
+    background-color: #0679FD;
+}
+.page .info > div:nth-of-type(2) .top span:first-of-type {
+    background-color: #FE9700;
+}
+.page .info > div:nth-of-type(3) .top span:first-of-type {
+    background-color: #5A6368;
+}
+.page .info > div:last-of-type .top span:first-of-type {
+    background-color: #FF4B25;
+}
+.page .info > div .top span:last-of-type {
+    font-weight: bold;
+    font-size: 40px;
+}
+.page .info > div p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #87888A;
+}
+.page .lists {
+    margin-top: 30px;
+    position: relative;
+}
+.page .lists hr {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    border-color: #f6f6f6;
+}
+.page .lists .head {
+    margin-bottom: 10px;
+}
+.page .lists .list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+}
+.page .lists .list:first-of-type {
+    border-radius: 20px 20px 0 0;
+}
+.page .lists .list:last-of-type {
+    border-radius: 0 0 20px 20px;
+}
+.page .lists .list .content,
+.page .lists .list .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page .lists .list .content span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 15px;
+}
+.page .lists .list:first-of-type .content span {
+    background-color: #1AB557;
+}
+.page .lists .list:last-of-type .content span {
+    background-color: #FFC700;
+}
+.page .lists .list .content span i {
+    font-size: 18px;
+}
+.page .lists .list .content p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.page .lists .list .items {
+    color: #8E8E8E;
+}
+.page .lists .list .items span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+/* End */

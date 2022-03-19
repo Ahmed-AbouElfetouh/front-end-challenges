@@ -1,0 +1,82 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh; */
+}
+/* Start */
+table {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+table thead tr {
+    background-color: #FC5103;
+    color: #fff;
+}
+table thead tr th {
+    padding: 15px 30px;
+}
+table tbody,
+table tfoot {
+    background-color: #F7F7F7;
+}
+table tbody tr td,
+table tfoot tr td{
+    padding: 10px 30px;
+}
+table tbody tr:first-of-type td {
+    font-size: 40px;
+    color: #FC5103;
+    position: relative;
+}
+table tbody tr:first-of-type td span {
+    font-size: 18px;
+    color: #A6A6A6;
+}
+table tbody tr:first-of-type td:not(:first-of-type)::after {
+    content: "99";
+    position: absolute;
+    top: 13px;
+    right: 50px;
+    font-size: 14px;
+    color: #333;
+}
+table tbody tr:first-of-type td:not(:first-of-type)::before {
+    content: "$";
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 14px;
+    color: #000;
+}
+table tbody tr td:first-of-type {
+    color: #A6A6A6;
+}
+table tbody tr:not(:first-of-type) td:not(:first-of-type) {
+    font-size: 14px;
+    color: #666666;
+}
+table tfoot tr td button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+table tfoot tr td:nth-of-type(4) button {
+    background-color: #FC5103;
+}
+/* End */

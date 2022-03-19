@@ -1,0 +1,236 @@
+:root {
+    /* --mainColor: #0072E1; */
+    --mainColor: #3729B2;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Start Global Style */
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none
+}
+a {
+    text-decoration: none
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px
+    }
+}
+/* End Global Style */
+
+/* Start */
+.page {
+    position: relative;
+}
+.page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 102%;
+    background-color: #F5F4FB;
+    z-index: -2;
+}
+.page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 102%;
+    background-color: var(--mainColor);
+    z-index: -2;
+}
+.page .page-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+}
+.page .page-content .nav {
+    background-color: var(--mainColor);
+    padding: 30px 18px;
+    position: relative;
+    
+}
+.page .page-content .nav::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0FDA9A;
+}
+.page .page-content .nav .image {
+    width: 50px;
+    height: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+/* .page .page-content .nav .image span {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--mainColor);
+} */
+.page .page-content .nav .list {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.page .page-content .nav .list li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.page .page-content .nav .list li a {
+    padding: 5px 40px 5px 10px;
+    border-radius: 8px;
+    color: #A6A0DC;
+    font-weight: bold;
+}
+.page .page-content .nav .list li.active a {
+    background-color: rgba(225, 225, 225, 0.1);
+}
+.page .page-content .nav .info p:first-of-type {
+    color: #7065C6;
+    font-weight: bold;
+}
+.page .page-content .nav .info h2  {
+    margin: 0;
+    color:#fff;
+}
+.page .page-content .nav .info p:last-of-type {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #766DCA;
+}
+.page .page-content .nav .info a {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.page .page-content .nav .info a i {
+    margin-left: 5px;
+}
+.page .page-content .form {
+    background-color: #F5F4FB;
+    padding: 30px;
+    flex: 1;
+}
+.page .page-content .form .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page .page-content .form .form-content .left,
+.page .page-content .form .form-content .right {
+    flex: 1;
+}
+.page .page-content .form .form-content .left .head h2 {
+    margin: 0;
+    font-size: 30px;
+}
+.page .page-content .form .form-content .left .head p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7E7E7E;
+    line-height: 1.6;
+}
+.page .page-content .form .form-content form input,
+.page .page-content .form .form-content form textarea{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.page .page-content .form .form-content form input:not(input[type="submit"]),
+.page .page-content .form .form-content form textarea {
+    border-bottom: 1px solid #969696;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.page .page-content .form .form-content form textarea {
+    resize: none;
+    height: 100px;
+}
+.page .page-content .form .form-content form > div {
+    display: flex;
+    align-items: center;
+    color: var(--mainColor);
+    margin-top: 50px;
+    padding-left: 10px;
+}
+.page .page-content .form .form-content form > div input[type="submit"] {
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.page .page-content .form .form-content .right address {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+}
+.page .page-content .form .form-content .right p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #7E7E7E;
+    font-size: 14px;
+    font-weight: bold;
+}
+.page .page-content .form .form-content .right ul li {
+    margin-bottom: 10px;
+}
+/* End */

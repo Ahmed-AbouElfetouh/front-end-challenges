@@ -1,0 +1,129 @@
+:root {
+    --praColor: #9FA5AF;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Open Sans', sans-serif
+}
+/* Start */
+.parent {
+    margin-top: 50px
+}
+.parent .head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.parent .head p {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    line-height: 1.6;
+    color: var(--praColor);
+    font-weight: bold;
+}
+.parent .circle {
+    background: url(../images/background.jpg)center center no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .circle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.parent .circle .text {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+.parent .circle .text h2 {
+    margin-bottom: 20px;
+}
+.parent .circle .text p{
+    line-height: 1.6;
+    font-weight: bold;
+    width: 75%;
+    margin: auto;
+}
+.parent .circle .box {
+    z-index: 10;
+}
+.parent .circle .box .image {
+    width: 256px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    padding: 15px;
+}
+.parent .circle .box .image img {
+    width: 100%;
+}
+.parent .circle .one .image {
+    background-color: #FF7058;
+}
+.parent .circle .two .image {
+    background-color: #80DCFE;
+}
+.parent .circle .three .image {
+    background-color: #FFD260;
+}
+.parent .circle .four .image {
+    background-color: #4CD4C0;
+}
+.parent .circle .one{
+    position: absolute;
+    top: 20px;
+    right: 450px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.parent .circle .two{
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    display: flex;
+}
+.parent .circle .three{
+    position: absolute;
+    bottom: 10px;
+    right: 450px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.parent .circle .four{
+    position: absolute;
+    bottom: 10px;
+    left: 450px;
+    display: flex;
+}
+.parent .circle .box .content {
+    margin-top: 20px;
+}
+.parent .circle .box .content p {
+    color: var(--praColor);
+    line-height: 1.6;
+    font-weight: bold;
+    margin-top: 15px;
+}
+/* End */
