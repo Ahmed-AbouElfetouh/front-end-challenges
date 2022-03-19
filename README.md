@@ -11,6 +11,7 @@ It has five levels of difficulty:
 - Medium.
 - Hard.
 - Very Hard.
+
 all levels contains challenges.
 
 ## Tech Stack
