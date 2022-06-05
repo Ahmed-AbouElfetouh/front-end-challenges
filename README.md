@@ -5,18 +5,22 @@
 
 
 #  Front-End Challenges
-It has five levels of difficulty:
-- Very Easy.
-- Easy.
-- Medium.
-- Hard.
-- Very Hard.
 
-all levels contains challenges.
+I used (HTML, CSS, JavaScript) to solve these challenges.
 
-## Tech Stack
+Challenges have five levels of difficulty:
 
-**Client:** HTML, CSS, Javascript.
+1-Very Easy.
+
+2- Easy.
+
+3- Medium.
+
+4- Hard.
+
+5- Very Hard.
+
+all levels contain challenges.
 
 ## Challenges Screenshots
 You will find a folder contains all challenges screenshots.
